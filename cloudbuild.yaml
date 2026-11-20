@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'asia-south1-docker.pkg.dev/slabspro-slabsuser41/cloud-run-source-deploy/cv-presentation:latest', '.']
+
+images:
+  - 'asia-south1-docker.pkg.dev/slabspro-slabsuser41/cloud-run-source-deploy/cv-presentation:latest'
+
+options:
+  logging: CLOUD_LOGGING_ONLY

@@ -10,10 +10,11 @@ env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   SERVICE_NAME: cv-presentation
   REGION: asia-south1
+  IMAGE_TAG: asia-south1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/cloud-run-source-deploy/cv-presentation:latest
 
 jobs:
   deploy:
-    name: Deploy to Google Cloud Run
+    name: Build & Deploy to Cloud Run
     runs-on: ubuntu-latest
 
     permissions:
@@ -32,18 +33,26 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
 
-      - name: Deploy to Cloud Run
+      - name: Build Container in asia-south1
+        run: |
+          gcloud builds submit \
+            --region=${{ env.REGION }} \
+            --config=cloudbuild.yaml \
+            --service-account="projects/${{ env.PROJECT_ID }}/serviceAccounts/slabsuser41-service-account@${{ env.PROJECT_ID }}.iam.gserviceaccount.com" \
+            .
+
+      - name: Deploy Container to Cloud Run
         run: |
           gcloud run deploy ${{ env.SERVICE_NAME }} \
-            --source . \
-            --region ${{ env.REGION }} \
-            --project ${{ env.PROJECT_ID }} \
-            --allow-unauthenticated \
-            --port 8080
+            --image="${{ env.IMAGE_TAG }}" \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --platform=managed \
+            --port=8080
 
-      - name: Show Cloud Run Service URL
+      - name: Output Service URL
         run: |
-          SERVICE_URL=$(gcloud run services describe ${{ env.SERVICE_NAME }} --region ${{ env.REGION }} --project ${{ env.PROJECT_ID }} --format='value(status.url)')
+          URL=$(gcloud run services describe ${{ env.SERVICE_NAME }} --region=${{ env.REGION }} --project=${{ env.PROJECT_ID }} --format='value(status.url)')
           echo "=========================================================="
-          echo "🚀 Your CV Presentation is LIVE at: $SERVICE_URL"
+          echo "🚀 Your CV Presentation is LIVE at: $URL"
           echo "=========================================================="
