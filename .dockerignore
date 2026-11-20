@@ -1,0 +1,6 @@
+.git
+.github
+*.md
+gcp-key.json
+.gitignore
+.dockerignore

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briti Sundar Ghatak | AI & Scientific Computing Researcher</title>
+  <meta name="description" content="Portfolio and CV Presentation of Briti Sundar Ghatak - M.Tech Industrial Mathematics & Scientific Computing at IIT Madras, AI/ML Researcher, GATE 2024 AIR 1280.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Briti<span class="logo-accent">/&gt;</span>
+      </a>
+      
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="btn btn-outline cv-modal-btn" id="open-cv-modal">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          View PDF CV
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> IIT Madras • M.Tech Mathematics & Computing
+      </div>
+      <h1 class="hero-title">
+        Briti Sundar <span class="gradient-text">Ghatak</span>
+      </h1>
+      <p class="hero-subtitle">
+        AI & Scientific Computing Researcher specializing in 
+        <span class="highlight">Large Language Models (LLMs)</span>, 
+        <span class="highlight">RAG Architectures</span>, and 
+        <span class="highlight">Applied Machine Learning</span>.
+      </p>
+
+      <div class="hero-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          Roll: MA24M006 | IIT Madras
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          GATE 2024: All India Rank 1280
+        </span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          Explore Projects
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="new_cv.pdf" target="_blank" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download CV PDF
+        </a>
+        <a href="https://github.com/BritiJadav" target="_blank" rel="noopener" class="btn btn-icon" title="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Counter Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">AIR 1280</div>
+          <div class="stat-label">GATE 2024 (Top 9.5%)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8.19 / 10</div>
+          <div class="stat-label">M.Tech CGPA @ IIT Madras</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6+</div>
+          <div class="stat-label">End-to-End ML & RAG Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Premier Institutes (IITM, IITG, JU)</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+        <p class="section-desc">Hands-on experience in building production-oriented LLM and RAG systems</p>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-badge">Current Engagement</div>
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-role">LLM-based Adaptive and Personalised Learning System</h3>
+            <div class="exp-company">
+              <span>MorphVector Pvt. Ltd.</span> • <span>Under guidance of Imbesat Hassan Rizvi</span>
+            </div>
+          </div>
+          <div class="exp-tag">GenAI & EdTech</div>
+        </div>
+        <div class="exp-body">
+          <p class="exp-intro">
+            Spearheading the engineering of an adaptive quiz and exam simulation architecture powered by foundational LLMs and contextual RAG workflows.
+          </p>
+          <ul class="exp-bullets">
+            <li>
+              <strong>Algorithmic Question Generation:</strong> Architected dynamic question synthesis aligned with standardized exam patterns, topic granularities, and varying student mastery levels.
+            </li>
+            <li>
+              <strong>LLM Evaluation & Prompting:</strong> Evaluated multiple open and closed-source LLMs alongside advanced prompt engineering techniques and historical-data-backed RAG pipelines.
+            </li>
+            <li>
+              <strong>Dynamic Difficulty Scaling:</strong> Designed adaptive feedback mechanisms that compute user aptitude in real-time, infusing spaced-repetition algorithms to solidify long-term concept retention.
+            </li>
+            <li>
+              <strong>Personalized Remediation:</strong> Built automated diagnostic feedback loops delivering precise topic suggestions and step-by-step reasoning for incorrect student responses.
+            </li>
+          </ul>
+          <div class="tech-pills">
+            <span class="pill">LLMs</span>
+            <span class="pill">RAG Architecture</span>
+            <span class="pill">Prompt Engineering</span>
+            <span class="pill">Spaced Repetition</span>
+            <span class="pill">Python</span>
+            <span class="pill">Vector Search</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Filterable showcase of AI, Deep Learning, NLP, and Predictive Analytics works</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="genai">GenAI & RAG</button>
+        <button class="filter-btn" data-filter="cv-dl">Computer Vision & DL</button>
+        <button class="filter-btn" data-filter="nlp">NLP & Language</button>
+        <button class="filter-btn" data-filter="ml">Predictive ML</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="genai">
+          <div class="project-top">
+            <span class="category-tag">GenAI / RAG</span>
+            <div class="card-icon">⚡</div>
+          </div>
+          <h3 class="project-title">Intelligent QA Chatbot with RAG Pipeline</h3>
+          <p class="project-desc">
+            Implemented a high-performance Retrieval-Augmented Generation (RAG) pipeline utilizing Groq's low-latency LLM API coupled with a FAISS vector database for semantic document indexing and instant contextual answers.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">✓ Text chunking & tokenization strategies</div>
+            <div class="highlight-item">✓ HuggingFace Sentence Transformers embeddings</div>
+            <div class="highlight-item">✓ Sub-second semantic search with FAISS</div>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">Groq API</span>
+            <span class="pill">FAISS</span>
+            <span class="pill">Sentence Transformers</span>
+            <span class="pill">RAG</span>
+            <span class="pill">Python</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="cv-dl">
+          <div class="project-top">
+            <span class="category-tag">Computer Vision</span>
+            <div class="card-icon">🍃</div>
+          </div>
+          <h3 class="project-title">Crop Disease Detection via CNN</h3>
+          <p class="project-desc">
+            Engineered an end-to-end deep learning image classification system to diagnose agricultural plant leaf diseases with high accuracy, preventing crop yield loss through early automated detection.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">✓ Deep Convolutional Neural Networks (CNNs)</div>
+            <div class="highlight-item">✓ Data Augmentation for robust generalization</div>
+            <div class="highlight-item">✓ Batch Normalization & Dropout regularization</div>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">TensorFlow</span>
+            <span class="pill">Keras</span>
+            <span class="pill">CNN</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">Scikit-Learn</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="ml">
+          <div class="project-top">
+            <span class="category-tag">Healthcare ML</span>
+            <div class="card-icon">🏥</div>
+          </div>
+          <h3 class="project-title">Hospital Admission Prediction at Triage</h3>
+          <p class="project-desc">
+            Developed a clinical decision support system that predicts whether emergency department patients will require admission or discharge, significantly shortening critical decision latency.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">✓ Compared Logistic Regression, Decision Trees & XGBoost</div>
+            <div class="highlight-item">✓ Class-imbalance remediation and clinical metric tuning</div>
+            <div class="highlight-item">✓ Comprehensive EDA & feature importance ranking</div>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">XGBoost</span>
+            <span class="pill">Scikit-Learn</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Seaborn</span>
+            <span class="pill">Matplotlib</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="nlp">
+          <div class="project-top">
+            <span class="category-tag">NLP / Deep Learning</span>
+            <div class="card-icon">📝</div>
+          </div>
+          <h3 class="project-title">Next-Word Prediction with LSTM</h3>
+          <p class="project-desc">
+            Constructed and trained a sequence-to-sequence Long Short-Term Memory (LSTM) recurrent neural network that captures complex linguistic context to forecast subsequent words in real-time text input.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">✓ Custom word embeddings & sequence padding</div>
+            <div class="highlight-item">✓ Recurrent LSTM layers with backprop through time</div>
+            <div class="highlight-item">✓ Preprocessed textual corpora via NLTK</div>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">LSTM</span>
+            <span class="pill">TensorFlow</span>
+            <span class="pill">NLTK</span>
+            <span class="pill">Keras</span>
+            <span class="pill">Python</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="nlp">
+          <div class="project-top">
+            <span class="category-tag">NLP & Semantic Matching</span>
+            <div class="card-icon">🔍</div>
+          </div>
+          <h3 class="project-title">Quora Question Pair Similarity Detection</h3>
+          <p class="project-desc">
+            Formulated a comprehensive Natural Language Processing pipeline to detect semantic duplicate questions on Quora, optimizing knowledge indexing and eliminating duplicate queries.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">✓ Tokenization, Lemmatization, Stopword extraction</div>
+            <div class="highlight-item">✓ Hybrid TF-IDF & Word2Vec embedding representations</div>
+            <div class="highlight-item">✓ Ensemble modeling with Random Forest & XGBoost</div>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">Word2Vec</span>
+            <span class="pill">TF-IDF</span>
+            <span class="pill">Random Forest</span>
+            <span class="pill">XGBoost</span>
+            <span class="pill">NLTK</span>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="ml">
+          <div class="project-top">
+            <span class="category-tag">Statistical ML</span>
+            <div class="card-icon">🌾</div>
+          </div>
+          <h3 class="project-title">Crop Yield Prediction via Regularized Regression</h3>
+          <p class="project-desc">
+            Applied statistical regression methodologies to forecast agricultural yields based on historical climatic and soil telemetry, incorporating L1/L2 regularization to prevent overfitting.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">✓ Benchmark: Multiple Linear, Ridge, & Lasso Regression</div>
+            <div class="highlight-item">✓ Evaluated via R² and Adjusted R² metrics</div>
+            <div class="highlight-item">✓ Categorical encoding & outlier transformation</div>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">Ridge & Lasso</span>
+            <span class="pill">Regression</span>
+            <span class="pill">Scikit-Learn</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Achievements Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+        <p class="section-desc">Rigorous mathematics, computing, and analytical foundations</p>
+      </div>
+
+      <!-- Achievement Banner -->
+      <div class="achievement-banner">
+        <div class="trophy-icon">🏆</div>
+        <div>
+          <h3 class="achieve-title">Qualified GATE 2024</h3>
+          <p class="achieve-sub">
+            Secured <strong>All India Rank (AIR) 1280</strong> out of <strong>13,425 candidates</strong> nationally in Graduate Aptitude Test in Engineering.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2024 — 2026</span>
+              <span class="timeline-grade">CGPA: 8.19 / 10</span>
+            </div>
+            <h3 class="timeline-degree">M.Tech in Industrial Mathematics & Scientific Computing</h3>
+            <h4 class="timeline-inst">Indian Institute of Technology Madras (IIT Madras)</h4>
+            <p class="timeline-desc">
+              Focus areas: Advanced numerical optimization, machine learning foundations, applied statistics, high performance scientific algorithms.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2018 — 2020</span>
+              <span class="timeline-grade">CGPA: 6.75 / 10</span>
+            </div>
+            <h3 class="timeline-degree">M.Sc in Mathematics and Computing</h3>
+            <h4 class="timeline-inst">Indian Institute of Technology Guwahati (IIT Guwahati)</h4>
+            <p class="timeline-desc">
+              Core curriculum: Advanced Linear Algebra, Discrete Mathematics, Data Structures & Algorithms, Computer Programming.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2014 — 2017</span>
+              <span class="timeline-grade">69.00%</span>
+            </div>
+            <h3 class="timeline-degree">B.Sc in Mathematics (Honours)</h3>
+            <h4 class="timeline-inst">Jadavpur University, Kolkata</h4>
+            <p class="timeline-desc">
+              Foundational pure and applied mathematics, calculus, differential equations, and probability theory.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2014 & 2012</span>
+              <span class="timeline-grade">ISC: 90.75% • ICSE: 89.20%</span>
+            </div>
+            <h3 class="timeline-degree">Higher Secondary (ISC) & Matriculation (ICSE)</h3>
+            <h4 class="timeline-inst">St. Luke's Day School</h4>
+            <p class="timeline-desc">
+              Excellence in Science stream with focus on Physics, Chemistry, and Higher Mathematics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Courses Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical <span class="gradient-text">Competencies</span></h2>
+        <p class="section-desc">Languages, Frameworks, Mathematics, and Professional Certifications</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Card 1: AI & ML -->
+        <div class="skill-group-card">
+          <h3 class="group-title">
+            <span class="group-icon">🤖</span> AI, GenAI & ML Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Hugging Face</span>
+            <span class="skill-tag highlight">LangChain</span>
+            <span class="skill-tag highlight">Groq API</span>
+            <span class="skill-tag highlight">FAISS Vector DB</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Keras</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">NLTK</span>
+            <span class="skill-tag">Pandas / NumPy</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Programming & Database -->
+        <div class="skill-group-card">
+          <h3 class="group-title">
+            <span class="group-icon">💻</span> Programming & Databases
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Google Cloud (Cloud Run)</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Mathematical Coursework -->
+        <div class="skill-group-card">
+          <h3 class="group-title">
+            <span class="group-icon">📐</span> Coursework & Foundations
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Linear Algebra</span>
+            <span class="skill-tag">Applied Statistics</span>
+            <span class="skill-tag">Numerical Optimization</span>
+            <span class="skill-tag">Data Structures & Algorithms</span>
+            <span class="skill-tag">Fundamentals of ML</span>
+            <span class="skill-tag">Data Analysis & Visualization</span>
+            <span class="skill-tag">Applied Regression Analysis</span>
+            <span class="skill-tag">Operations Research</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Certifications & Honors -->
+        <div class="skill-group-card">
+          <h3 class="group-title">
+            <span class="group-icon">🏅</span> Certifications & Extracurricular
+          </h3>
+          <ul class="cert-list">
+            <li>
+              <span class="cert-check">✓</span>
+              <div>
+                <strong>MLOps (Udemy)</strong>
+                <p>Pipeline orchestration, model versioning, packaging, and monitoring.</p>
+              </div>
+            </li>
+            <li>
+              <span class="cert-check">✓</span>
+              <div>
+                <strong>A Deep Understanding of Deep Learning (Udemy)</strong>
+                <p>Under-the-hood neural network architectures, backprop, and optimization.</p>
+              </div>
+            </li>
+            <li>
+              <span class="cert-check">★</span>
+              <div>
+                <strong>Athletics Champion</strong>
+                <p>Champion of the Bengal Super League (BSL) and Dean's Trophy at IIT Madras.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <footer class="footer-section" id="contact">
+    <div class="container footer-container">
+      <div class="footer-cta">
+        <h2 class="footer-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+        <p class="footer-sub">
+          Open to research inquiries, machine learning engineering roles, and AI innovation collaborations.
+        </p>
+        
+        <div class="contact-card">
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Email:</span>
+              <span class="contact-value" id="email-text">briti.sundar@morphvector.com</span>
+              <button class="copy-btn" id="copy-email-btn" title="Copy to clipboard">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">GitHub:</span>
+              <a href="https://github.com/BritiJadav" target="_blank" rel="noopener" class="contact-link">github.com/BritiJadav</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location:</span>
+              <span class="contact-value">IIT Madras, Chennai, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Briti Sundar Ghatak. Deployed on Google Cloud Run with automated GitHub Actions CI/CD.</p>
+        <a href="#hero" class="back-to-top" title="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PDF Preview Modal -->
+  <div class="modal-overlay" id="cv-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Curriculum Vitae Preview</h3>
+          <span class="modal-subtitle">Briti Sundar Ghatak • new_cv.pdf</span>
+        </div>
+        <div class="modal-actions">
+          <a href="new_cv.pdf" target="_blank" class="btn btn-sm btn-outline">Open in New Tab</a>
+          <button class="modal-close" id="close-cv-modal" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="new_cv.pdf#toolbar=1" class="pdf-iframe" title="CV PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Dependencies and secrets
+gcp-key.json
+*.key
+*.pem
+.env
+.env.*
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
